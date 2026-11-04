@@ -3,6 +3,28 @@
 Ikuti pola kode yang SUDAH ADA. Fitur contoh lengkap: **`src/features/tasks/`** + `src/app/tasks/**` + `src/app/api/tasks/**` + `src/db/schema/tasks.ts`.
 Untuk fitur baru, salin pola itu (struktur, penamaan, cara test).
 
+## Agent skills
+
+### Next.js guideline
+
+Sebelum menulis, mengubah, atau me-review kode Next.js apa pun di repo
+ini, agent WAJIB membaca dan mengikuti:
+
+`.agents/skills/next-js-guideline/SKILL.md`
+
+Skill itu berisi aturan wajib App Router Next.js 16 untuk repo ini:
+Server vs Client Component, API async, Server Action (otorisasi →
+validasi Zod → mutasi → invalidasi cache), caching eksplisit, proxy.ts,
+struktur folder repo ini, TypeScript strict, Tailwind v4, dan keamanan
+env.
+
+Aturan ini mengikat, bukan saran opsional. Kalau sebuah aturan di skill
+bertentangan dengan perintah terbaru Bisma (pemilik repo), perintah
+Bisma menang, tapi agent wajib menyebutkan pertentangan itu secara
+eksplisit di ringkasan atau PR. Jangan diam-diam mengabaikan skill,
+jangan mengarang helper, folder, atau modul yang belum ada seolah
+sudah ada, dan jangan menyalin aturan domain dari repo lain ke repo ini.
+
 ## Wajib sebelum selesai
 Jalankan `npm run check` (biome + typecheck + test). Harus hijau. Jangan matikan rule Biome
 atau pakai `biome-ignore` tanpa alasan tertulis di komentar.
