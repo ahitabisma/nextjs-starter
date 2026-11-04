@@ -74,7 +74,7 @@ Repo ini ditandai sebagai GitHub template. Untuk mulai proyek baru dari template
 
 ```bash
 # lewat GitHub CLI (repo baru private + langsung clone)
-gh repo create <nama-proyek-baru> --template ahitabisma/nextjs-biome-starter --private --clone
+gh repo create <nama-proyek-baru> --template ahitabisma/nextjs-starter --private --clone
 
 # atau lewat web: buka repo ini → tombol "Use this template" → "Create a new repository"
 ```
